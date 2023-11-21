@@ -1,0 +1,161 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : COL_PowerShell
+ major_version : 28
+ minor_version : 0
+ type : 7
+ description : ""
+ subtype : 0
+procedure_set :
+ identifier : 0x1cebbfed00021242
+ internal_properties : CAAAAAgAAABGLu41kG7fjQV3iS4F72qmnKaNh5694reolNKIW0iw
+ code_elements :
+  type_code : 31
+  p_codes :
+   -
+     code : |1-
+      
+     type : 720896
+  procedures :
+   -
+     name : PSRunScript
+     internal_properties : CAAAAAgAAACQcynCkCF1Ai++ZXAmMqsIZxKTv5mEl5nzf7P0G3bw474Zx9LNqHINlygKZnMmxTzf5VD+3O466cBU9z0pr0jAXrY4shcSvhxbsOsfyO45fSfhJ238HvcR2ILbOBvKdtfN83oCw8foQfSkZs34qQUaft/aaDy9QyJ0PItUYsOlJ7uZ7q9sVEQluJksN6JP2SrfkWHpzCCwiy/iaWtZxy6xNTrwLQmBHDj5FBUmg+9ynFZPEZeRiMwZ0ooWKWIGB3MxZXMuyTaonnwVJB0xyZ1Y2ns0rL39xWRdN/SLlmxX3xjDPYfgOJOxOOwqc9Gb5Q==
+     procedure_id : 2083970277217342018
+     type_code : 15
+     code : |1-
+      // Summary: Runs a PowerShell script locally. /!\ Caution: the program must have administrator rights
+      // Syntax:
+      //[ <Result> = ] PSRunScript (<sScript> is string [, <bForce64bitMode> is boolean])
+      //
+      // Parameters:
+      //	sScript (ANSI string): PowerShell script to be run
+      //	bForce64BitMode (boolean - default value=0): Forces 64-bit mode when in 32-bit
+      // Return value:
+      // 	multi-value: Boolean : True if the script was run, False otherwise | String: Execution log
+      //
+      procedure PSRunScript( local sScript is string, bForce64bitMode is boolean = False ) : ( boolean, string )
+      
+      // Generate two temporary file names
+      sLogFile	is string	= fExtractPath(fTempFile("", SysDir(srCommonAppData)), fDrive + fDirectory + fFileName) + ".log"
+      sScriptFile	is string	= fExtractPath(fTempFile("", SysDir(srCommonAppData)), fDrive + fDirectory + fFileName) + ".ps1"
+      sCmdfile	is string	= fExtractPath(fTempFile("", SysDir(srCommonAppData)), fDrive + fDirectory + fFileName) + ".cmd"
+      
+      // Save the script
+      fSaveText( sScriptFile, [
+      	[%sScript%]
+      ] )
+      
+      // If the script cannot be saved
+      if ErrorOccurred then
+      	
+      	// Identifies the error
+      	ErrorPropagate()
+      	return ( False, "" )
+      end
+      
+      
+      // Create the generic command line
+      sCommandLine is string
+      
+      // Force the execution of Windows PowerShell in X64 if it is in 32-bit on Windows X64 
+      // (useful for WebAdministration modules that are 64-bit compatible only)
+      if bForce64bitMode _and_ In64bitMode() = False _and_ SysWindowsVersion(sysProcessor) = "64" then
+      	sCommandLine = [
+      			"[%SysRep(srWindows)%]\sysnative\WindowsPowerShell\v1.0\powershell.exe"
+      	]
+      else
+      	// Run the PowerSell of the current environment
+      	sCommandLine = [
+      			powershell.exe
+      	]
+      end
+      
+      // Complete the command line
+      sCommandLine += [
+      	 -NoLogo -NoProfile -NonInteractive -ExecutionPolicy RemoteSigned -OutputFormat Text -File "[%sScriptFile%]"
+      ]
+      
+      bRunApp is boolean = False
+      
+      // Save the CMD script
+      fSaveText( sCmdfile, [
+      	[%sCommandLine%] > "[%sLogFile%]"
+      ] )
+      
+      // If the script cannot be saved
+      if ErrorOccurred then
+      	
+      	// Identifies the error
+      	ErrorPropagate()
+      	return ( False, "" )
+      end
+      
+      // Start Windows console with the CMD script to be run
+      bRunApp = ExeRun(sCmdfile, exeIconize, exeWait)
+      
+      if bRunApp = False then
+      	
+      	sErrorInfo is string = ErrorInfo
+      	
+      	// Clean up files
+      	PSClean()
+      	
+      	// Identifies the error
+      	ErrorThrow(500, "Unable to run the command " + [ CR ] + sErrorInfo)
+      	return ( False, "" )
+      end
+      
+      
+      
+      // Loads the log
+      sLog is string = OemToAnsi(fLoadText(sLogFile , foAnsi))
+      
+      
+      // If a PowerShell error occurred, the log contains the details of the returned error
+      // and up to version 3.0, a message such as the following is returned: "Character <script file name>:<row> : <column>"
+      
+      // If we have the error sequence
+      if sLog [=] "[%sScriptFile%]" then
+      	
+      	// Clean up files
+      	PSClean()
+      	
+      	// Throw the error and exit
+      	ErrorThrow(500, "Unable to run the script: " + [ CR ] + sLog)
+      	return ( False, sLog )
+      end
+      
+      // Clean up files
+      PSClean()
+      let bERR = ( ErrorOccurred )	// Cancel ErrorOccurred
+      
+      return ( True, NoCharacter(sLog, CR,sscOutside))
+      
+      INTERNAL PROCEDURE PSClean()
+      	// Delete files
+      	if fFileExist(sCmdfile) then fDelete(sCmdfile)
+      	if fFileExist(sScriptFile) then fDelete(sScriptFile)
+      	if fFileExist(sLogFile) then fDelete(sLogFile)
+      end
+     type : 458752
+   -
+     name : PowerShellAvailable
+     procedure_id : 2087711056294365724
+     type_code : 15
+     code : |1-
+      procedure PowerShellAvailable()
+      
+      return fDirectoryExist("[%SysRep(srWindows)%]\System32\WindowsPowerShell")
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : COL_SansNom1
+resources :
+ string_res :
+  identifier : 0x1cebbfed000412ce
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CAAAAAgAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ

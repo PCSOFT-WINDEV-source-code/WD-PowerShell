@@ -1,0 +1,287 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : WIN_Run_a_PowerShell_script
+ major_version : 28
+ minor_version : 0
+ type : 2
+ description : ""
+ subtype : 0
+window :
+ name : WIN_Run_a_PowerShell_script
+ identifier : 0x2021466e01e87e1f
+ internal_properties : CAAAAAgAAACXMQxIIiKmRo6BQHQGJiP3lT7H39982PscQOctR7lXzQRsgVor4V0MnmrDVyOwRFLeN4mAnI/xLByHRLD2/f/ko+8sFVgZ2KkVFGZPPowD5AOXJtXD7Y3NrnSP/u8HSx119m1f91jR2/cG3+VL8oMpcnTiKlx23hQgqTbF3zkeYa4z0kyshA6l8+6CFJcJi/3FBR8oldx/ct91WnRQUD5PYsuXTwzLrMhwFNss9wz4I9X8xrus+AqJ6qTG/5JEXJGRHpG5DMhvPfU0o/LroRsmVM1yH++08UJ2qZkHw0+KTiumYXTt1Rm+5JyvWee2ngXJl05MGZVkxeZtnUKiWUlvnENcl+DArLmQY9+PNChQncW03EMtLuvq4vExt8Z0/bwvd/bxDuUlBQqrcGhe/B3CdSHh4Ffu9d9r8YZrLphbomy34mbK3mMFbycnQesIGXikNp/5AYZyNIZYhLinxwZLJc3rw5pl710lowYyMxfjKn2rGd5DI29/8bUoK7rXCuVoleRCE6AWgivQubAg4BhhtI1SUwqHUO1UgL8Zfab7fbCcX4YfUkZ20HqIv770fzssiXzDE1HVM+eOeh8PFYxuiYjNw2M7Ytj4zbAZ9LRJCjeRr9Dddyc5jd14GXVkz+SRsO75c6DvyI2OA+1S+mOvaVqsC7yfR5ub+Sb7+wduXDuDVP3lyEYDU1nK+9xESCcKwu6QksdGaVv7yhocgTc5h6Lo2bYPXc3TMy57OEDyU26aov0Q98doHVHIxIe9YFcTk3DdYLOkivsWviEwBrlaBn3AOzU3YnSkE281Jn9xzJmbhW/KrGSv4dR5s3IQWvv3fxvuC4fNsISBP/5oDs1bUmE0+1ikagKb0Hn+UZhrsM4l0DNbdF+smrAMCKSSPBf+iZFTxmnz070=
+ properties :
+  width : 800
+  height : 600
+  widthClient : 798
+  heightClient : 568
+ controls :
+  -
+    name : EDT_SCRIPT
+    identifier : 0x2021466e01e97e1f
+    internal_properties : CAAAAAgAAAA26ZtkOOHHYYk5vzqhh3OAgu9p2VHzeaH9YhYDrv4JEpGNV9ib/4GPkRd/kFDG/Qdgurt1PKuUMF552OYq3gINbqK7akFvROkvzTdb0CcVW2ttShdal16DG97oCucrT1bcTB+aATAaDVI6P5OjGUF4WkNm3WnWf4DCP3merna7RHWi+W0t9AhSG9cm/4PoBU8g2eTZl6W8mpBkcWOK1SYw6q74N05nMh2z7r1Df85hnjrPqAuDROA1l/7nntoEAn0TJwl/8oGV92r098y/a2GBMOFGOc2Xja2HPpwCEeN3Q2mEJM6GhrKf6lI/mz/jTbCj3b/bBtj7CRYhrSjHQQhkGdO8EhZhtn3+pyNHKdjFKw+hcX+80qoAFfk5QD4vAAXzcopIPol3gyncKk61uHR2+r1IScoVKJ0YSCELLgCEEHqdIRTLXGVC+jbPOxRCMcFK3twcVxlz9v+Gp9X+w5Q+Fc8ojiUK7/6WIMQpEtaNOgQjxvkkzM9n9ZDKYRu+xpoJ2BC1jPgtTiS8fXrfG2fPNrpOyneIQIpcyaGPBYPis38vEwokxmhXZ3j3agnCIVr65HmosWDp+OQdd7bSNssTGm0OXxG403Njl+xEZdAIKgJQH4VpvCmkzzD+yzcppzY6a8ZofQvhz5F4vt88mcAo/NJTIf1MijL4sOjZRbgkibFptxJHyDGD4AxymZjM6cVHgYNPpnhk6h0X5fMjmc6NEtMVV4e3LhV9HR9n7KK7hSZ3RuAt8Qdis19U74HtVetdhfV+9C9fz/LXCGfa2fAWcteMXqB/ImNMaWmq5ote2s6Um4Ci5c+3ZzHwGxZYRCub+FQgyfF9UprVEv8uzDNwJxOezFdUY7vNSX1B1xc9Vxba1c9rWChwIjv2k6GXCJ1y4xHHipBTiCrmwQgD1RLdA914ZqgoqRPOHVSxoKGs9pHm94w22pvs3s/7YaWvf00JB9VyDm1mzyqgEzTwzevkeTTE9Wt2d0gVL9UXS6GipFGSBsGs1fxoSyCSFCTgBEysmbKogd0Zru/I28QAk14PBNku7k3A1QqmziWdMe6XIUXdsZI9w/cRqbBCvkvjJcwsiWpfl2O6DeR98BFchmdh2TthAAoAhIg8e6p14qQVEz2AxAsVIaC8HRn8Wxjo7ScOho9DjBRTvIGolcNv7vo0hcM6Fk/HjU4l3ZtSqcqBICu5ZvH+C03aqJBglR2fXaTbcx30SAeKxvGk9VDfHtliJMyxCWcsiUhYhJ8bW5rQ0t4kixPv5Q3U3QtUu0+Eguvjo1LGHSgnJ0TCrI054Mx7WPAmhuNUShpxsqkSz6u0AuhydTk9EROE6fQuueXUdGcx9KWlkQ==
+    properties :
+     x : 6
+     y : 36
+     width : 786
+     height : 244
+    type : 2
+    code_elements :
+     type_code : 3
+     p_codes :
+      -
+        type : 276
+        enabled : false
+      -
+        type : 277
+        enabled : false
+      -
+        type : 278
+        enabled : false
+  -
+    name : BTN_Run_PowerShell_script
+    identifier : 0x2021466e01ea7e1f
+    internal_properties : CAAAAAgAAABmcwVSjIOSRbDoJnHYRWe+MmLocoLol3WI4YrTHdfZ5QQ0/RQ6yjALlPMFP/TRA029mGIKLGAdYGbQnYuVWqaJTJrfrTQ3QQ4yRa9T+3HDsZ6iee15E3xmTN5y+lTZ6ZRlFjfVQZqzptE7If4+CGItLUoM+hU2azh2Vd41nIX3IUqua9UrgVgYYx8ayZfptWppXSTiLnDo1LnUHZuNsbLTcKdoaqWTnFOW1klxCAq9oN9iDWzxOfdoZWcvZGxzVDjku42Ntex9lhgDbsC31Yc7pSFlHyGwXJ7kmjKjW+KIMRI0J9PSbXaLfpJARKxCPN6GdR6rxBwLTtDDUUKW3wsGtABDrN/254VHLeF3k9PtPLEoYJmHLZ2FvVnHFpRpe/Vjen5nzSiImSpBJbd5YXyQham/P4R9r2RHsy989jpM3/6Oo3O6fQcnsHHUcx6orGZpnpk/uWGk9Ul78TI3IFt8euyUFsOh00z7YumGWnowAGr18VATvoXuAdhYvQB838lJ6HnnFqZxuU4lTdPs5a7xTFdtPIqDu0eA6QPS8oiQESLVP2vKsLt/mPuSZTALPzQEwb7CghW40XoxL85cyhRSm2Tgjn0giyy9/DmNfWC7SGn09XBN1g+f/PvDUjKL6+BZIC6AUcngPAu+fdv5VywUJopjq5R9Ai3xBF6eh1vAVffdDeHgEvt4S/lF3DGFX9dgGJAJHJgPPv8zLF3ireXE9F2PBxr4HoBSRVk3RbZg5sySDUGzN8ldAYl/eEdKhomejahBupnLjaGsmpUuJoi3ffBsZQ9oQbE0C28IXDHGkdBTJCf+QJEZk4+USa2XOOKi8TqX0dGG8mx47YJ1pS7ag8yKwcJUA8B+xaC+191tishFwQlUMcpbrRhEgZKnFcPArcfFPhajzowFaey4ZBmretV7SxOugE9OCtkWwd01Lc9tuLDCpmVLYVCPJSBBjMW+ZY9y819UITZX9p2G8mfo
+    properties :
+     x : 6
+     y : 277
+     width : 786
+     height : 36
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1-
+         bResult		is boolean
+         sResult		is string
+         bForce64Bit	is boolean
+         
+         // Should we run the 32 or 64-bit PowerShell
+         bForce64Bit = (SEL_3264 = 2)
+         
+         // Run the PowerShell script
+         (bResult, sResult) = PSRunScript(EDT_SCRIPT, bForce64Bit)
+         
+         // Show the result in the window
+         if bResult then
+         	STC_RESULT			= "OK"
+         	STC_RESULT.Color	= DarkGreen
+         else
+         	STC_RESULT.Color	= DarkRed
+         	STC_RESULT			= "In Error"
+         end
+         
+         // Show the report
+         EDT_Execution_report = sResult
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : STC_Execution_result
+    identifier : 0x2021466e01eb7e1f
+    internal_properties : CAAAAAgAAAAMXtCt66Sfdl/4LjKngJ7AWhLfQ/K7xMMXgQvIpWyxdGJoPsvVRQfcHIxmX4/EaRO3xWCOuIkjyhth/Bs3e7LIOk+h1wnTk/vbKeOJ7K/Os9mJBWq2BAbo598gwiFUZih6MgHIjhXuPcCgQpTw4Sv6oeNstpGU9dzgGkFFpSxqyvFM2nofgpbnFg3DyrOXb0qDAKB/INV3+987ZRPxZf3NzEg6h5Y1YHBKVHi5JtyNDcElnot9p8R+y/C8+PySnhRDg53e5wMu7LhtI6L2HHyS2y5Nm5+ZDOhUwoJkgIlwqr60PlfGXVP1TeTBiRpWQj26CHF3I6tisvXPLU0xX83iDSwIazjg4XyGToLeif+BwhEtI48pzCQAADNY+0kG4JWpf7iz0aC+YaXbZN7leiGKWAYr2aTgGLtT/c+ZpHnH132UmKs5t5wx64GFRJ4rGy7qfV+jG6vOitwsresz9U20GykaeB5nepDgjm0wjo1z3p+pIUeIEjKxJmSo4Av0SvsbGw==
+    properties :
+     x : 6
+     y : 332
+     width : 156
+     height : 20
+    type : 3
+    code_elements :
+     type_code : 2
+     p_codes :
+      -
+        code : |1-
+         
+        type : 18
+  -
+    name : STC_RESULT
+    identifier : 0x2021466e01ec7e1f
+    internal_properties : CAAAAAgAAAAFfIS0XU8L/a43C22LyvKLMjO1fLG8t789l3KdPC8DGREW+UNY5nJq19U8ynC6zWN+serqzJCqAPKPAqH3MsV+GlSxFhLDW/tDydBPiokV1B5OTzvum60Q2Ffp4K0eUEhyjYe6YKIaINUt2ZMnPF7mZNGIVUbpNMjR1D4ZqrFHPe0xVbKNHdOJPSXUPv8sH1kpEV0rdK7gDars4yuCmit/acdp5T+6xKF0zz5xecdB7F+UiVbjJ1sSjzDD+8x7EURuCImC3oPiKbUje518lZ9QP0TPQCMcyd/7Ve2LQH5UN1GhkCzQoafS0JcYQ1AjCGSyx7VWbQ5VFosShteNCWx5z3ACzrGwvukDlOSTIKV6kjwni2nG5hoV74agcY/+/beGnmpKJllIRItobIfy6TQfmSng5pgJQ5xg3CNArekvYS49XH0Ob6mGHf4KtxBdOPBpLtlbaOion8LVdZnkb2oxVliLAtCUl1wRLOQ=
+    properties :
+     x : 193
+     y : 332
+     width : 156
+     height : 20
+    type : 3
+    code_elements :
+     type_code : 2
+     p_codes :
+      -
+        code : |1-
+         
+        type : 18
+  -
+    name : EDT_Execution_report
+    identifier : 0x2021466e01ed7e1f
+    internal_properties : CAAAAAgAAACP90KVnO2FxONf86XVBkO4+bc0tJbWGzpXSnS6ihwx6FuVy051emN+/WME9azH4mWkPOqK39iLLZpM/6cDdqNM+cqxtFwYfusKQu7z9DbJB6YLHAZoyKjs9F1Dgbyj/Nkhrj75d2KJFBGlz0/8Yg6F4FyNZLzDjVZJbz6AFgaAyRlTZGnPNfmB0XZDy8E8l9XRpr8MU6AggxyZeTC8ZIiOJKk/EIgpvP7prg4H4ouW1NHc+6eC6rqZ1/AdoRcjDKLO46dHVELaBvhR7qoWzyjnFTa33/EkPPD07Rkb7Gw1Iaju1s7hpRmqdTuNPtN0cya+D/jrjomjp0uAohTZKRDezOa2XQvtTEAxRjTiWLpEURvVku2FJ44lP/caq4gWHlN8/27s5d1AJJUoTz+CCzX+zOPNoJGTVNIyzszv71qcME+MmRaRD8SCH/vQCaFTjv1hPhhXW+pyxQzcH7N4D4ijeYnrEA2wYOy6B6Lrf3hkVWMSSxI8tbqWgXdok1rQq7MZZmDNl3YODep9jwle0kLXZZTGlVLL5ykPu8veltmpK+uo7goV12q/4NXVrSLb+qTpuWNhQ3N7bhRsjmt0wZ8qpWKZv71drQDlctEcvDXRs8QY2IcfA/CNH4cfNGyoZbAc5OHrvQ1vIrDpq3mEwpLfgkUy2CmUWG3FV6UgiuKYr1gUAdkM8fB/0UJXCuzdal2oG8vx1Dg/kbiH8VQ/916RtpTj7XrrgZgEZuNCgEb3qUCTjVRrApE7g+YywRcAY+9FEAgTqma0mQrbs1fmqSL1ou34tcEaWtHg/Gwuq4oLhYR5t74sQdZz/qd3c3RgYa7aTx8o9VZ2IAY/Ssr01X+nOCocDoc99S1nnc+Ua6CR3yo13vAevdiOkiiL/BJzKfFfseICbgS03dm7kTATExrZsMFrZ3gY73N8KdI0tfvd2zWG+lykwiPKZGCqz8Q5rnK4hiZcfnMHsMkS/1yPUzH0XqZUWPA/o6SXxKqnEj9WTsTpuYuVKhNMoVF1mGWuj6EFDyTqPt0G4sJc2WdI7gReowa/4V9iUxOEC0GVPQPyCjrlPd4gChpkTPdmHhF2POA5nqAEgpQ2uBiMwmVzOONwArp5MQ7uZr9k9EJXWhjMCTfON9UtnuOU049TBOOz9NylRmgMTf423JB62yS/NmwS0a1LVxOkyPzC3QhuGPkt+lA7Rfk6PYZktX2FAPDdxs98RVJlJlOAEaRjn+rOCQCa2Zwl+NYOX0V+E4W8+BmZSEgI9qCLHjf8S/sfYYxWAiQO6pV54acMP42jrI87pm7V3zDCgG4FTDxCBQhhu0Zw64wYQu4Q0aNJSsbwSkcGKSIXHx3w6Yqqgx/foVietUW9fWibxxljlnq4VW5vKce1cpm9FbDje1ZMqmRm6PNFkzaUnA==
+    properties :
+     x : 6
+     y : 358
+     width : 786
+     height : 194
+    type : 2
+    code_elements :
+     type_code : 3
+     p_codes :
+      -
+        type : 276
+        enabled : false
+      -
+        type : 277
+        enabled : false
+      -
+        type : 278
+        enabled : false
+  -
+    name : STC_PowerShell_script_to_run
+    identifier : 0x2021466e01ee7e1f
+    internal_properties : CAAAAAgAAADRo/z1SC39nq3OMTcVuqSWPvkxATeoqL5WFn7F0aBdT312a61SaHGetirdrDhmxke45TLTq64aFSAvc3dqQudDKjQOEo4TIbeSTeycxBauN9VSfIs+5Lf4irJtVKz8X9QvxRFvJqkzQcSdkf8hAh3qus+F/QQgOqTQGcoROGQajYnMyIH8bsynDsGq8iv2fa3FnO6EFSMglALL7KiIsxoL2+u4Z3kjdnYQ0HCNkt2EGSGr7zWLqsSg+6+YrDQxsXOpG+4ie6NdQpA7luaRMKbX2jux74WS7C4V8GvE5QU+7MXJQ8ZfGD6cNlNhyhWeSDoA9jP3SYnFHexeeannXK8AWmptp69pAEs6V28a6QwC6uq42fJ2xHNHRKF1Td306jxqR/zjdbrOM+HCBGTaHpIGKZwpoKq5qxo5ZdNv2ofDUWdkIgsJSnTI6oO9zsUILIhe77qq0Liy+b1pKRNAGOs3ag7zllfzdc6y8OLvJQhwwFdCQY9CbprDvpGFK7Q4tSwlTNSeQCZLZPMSkNwiRQ==
+    properties :
+     x : 6
+     y : 6
+     width : 265
+     height : 24
+    type : 3
+    code_elements :
+     type_code : 2
+     p_codes :
+      -
+        code : |1-
+         
+        type : 18
+  -
+    name : SEL_3264
+    identifier : 0x2021466e01ef7e1f
+    internal_properties : CAAAAAgAAACKM0qfpG0EojWWznnmhSWFUyy8Ki0dGDb+rlsN/4xl8ah/ZKd7qtl1M+5CbbKE1gHreikRIstJ8mt/AWqmzYSDh4ZJLB1XaLrQ2i0dl2wnVSs5YEG6eWWZht/W65vui9pfeEfXZKu+kzDHg9Dig3WM7YxHFYt7Y2zEvr3cnweQ4ZDn2vT0otwDpYGkp9jTOwO+1PwIGyyDkQHq1t4DGvwWEnyeQ0OlqQb4Nf5yAvjyJfaDABIlAc7j5Ns6KfT6w604CBaLttaY5EnN8HK9tg9qkt0FzNOMmgtGeiw13TwDzGFaIf3/FKlHZC1UkmjZOJIWMbSPDeC6+oe7huzbHdGrBX9Q2xSZYAsFzMifE58MA4OnWAfSzZ+irA0hYTW8+oUUYnu0QKMspFXI7kRcFN9kKiPpIHSqXpLczeqmlJT8rkHijs0NEgRbeBv7eyWkZW/WyFDjoaCsNQKtlBiVGcpXtNFyVv/WyWYQokHQ0C7X5+U9h4T3zzYLVJyudtO6r5z+QSejJ+eZ9Yo1pTr1PIQM/TlpBt84h1wPfBbv9hIIlTOIeWiW1HmYrIud7xaMwD5MEAbqFc0qAPpbLwtvk0l4pz5DszYMX2pBWe9DUfvbpLl8cbAIozl4T91SpvgzWLEUI2Mr6WtuvCWiPRYgUaUX+YxKqzhbx+hufrrdTaZfF/Wf5Kui40tyIVuCBJzFyUxpuoCZbdTVqJY0Roq8JjG3/6h4/+PumpVj1fwdbGncbTDQi3CUnXulwabKZM0dShqapvXDMOwq6PyyzUYCF19HajrI5oFXhgjSjMN0cUlQTxqSs4KH7+BjrQD4Gi3orCGJykjsbtuX7S4htFai12UtiCere4ZxiKusGMoENCQ4VQLkzkV7V2VzNDU93ONk2xLY8f7WmFmCVW7RCbZ59VUUH6vD6KFl6UO7lBjhH710eaug2f6gpmfoA/1Hs4Hcr0x/bA+jSyV6kLSpU/j4+woEXFsFVFf4LpPUamuZ38BCK840H0vcmtpnFTfzCDlFNiYWueFuW1X/FVpMcv6CN51P4TPAU23wXCJF3O/yAvweWi4tMkaK74AUruDjIgiAIL6VpDPaadtYquEw7B8VW39M+uHkBE5iotnxNSj4O4X/JQqc/9frjAuDzRmcATxjxevYA/4UdW4=
+    properties :
+     x : 652
+     y : 6
+     width : 140
+     height : 24
+    options :
+     -
+       internal_properties : CAAAAAgAAABTXHesFtyFuQ/DdYPqBN8LfpT2G4vFZSUwm48KenVOKC4m3l90zIS+V2Xs0J7Ab3S/Euh5nEP8HgAJ2NhANoAC6m72Ea1jufHyz9aGQZ4Hye5+Ikf086VB/79AiCJA5z9z2tJfqZcOW0gzIL9CdZd8Y8xugFhHl2eosN+8OA==
+     -
+       internal_properties : CAAAAAgAAADVvBKeScNEq/9IvqcDgTUsxG9ZBuMM4Zjue7MIBk6e22bDIpssjaSZs4BUBbYuUTz78JayaKfqSurFUG8XcaVM91dhr7t5RAGPhx11GZxccUVRv6f0hb6poF0fI4zeWu8qpVcflSVL04MBPeiIxWyE8ocLjID47OqrQqKfJkE=
+    type : 6
+    controls : []
+    code_elements :
+     type_code : 6
+     p_codes : []
+  -
+    name : SPLIT_NoName1
+    identifier : 0x2021466e01f27e1f
+    internal_properties : CAAAAAgAAAC9EIW5845d+5mGX3+zDwE0pl9KIFSuun8/gIgajazNVE5uZ2MQy0EoGCd39zsntrnOTn0M9ZR09BZaKDg5OFxVK3SGmU6nYJyVaszIjukgS0J+ytp9c7lLpfVDoehiZypnkQYpQarKh5wohZbuReVWGXvJ+vrCi6Qh6qPIbfASapKt5CdHVSwPOYleCC10u8Tib4ukDARiNJjg4K2osZnyR1qIrdJR+5HxDzSZb6DUheG7ImOwBm3d8rz8R88Z8kmMpQOIdmktPzABuOTt8M1XNR07xHthHK/bABZh36rxJci0XcWSnppoX5vGXiUYJlkg47M4EtOtwMI6E2SIZrfYf6c5cvsgY5aa5MHdFxVhNiirPYdNrTaZY4gdX0Ga7EhG+qB6Ts2xWAEiIofk2v7ESX7ok8pY8+yDybEicuJD5TCD2pj6WkfjBskJkxSV9UEBzViuHGPdyQKP8IjFCYPUjxeSz1vGHS327CYXxQA2boeGVMMAzEGLGQI4ndktc8Z1+RAn
+    properties :
+     y : 321
+     width : 798
+     height : 5
+    type : 28
+    code_elements :
+     type_code : 61
+     p_codes : []
+ menu :
+  name : _Menu
+  identifier : 0x292573e513b5f221
+  internal_properties : CAAAAAgAAACCv199ARoPUfG3WAPSG9eefhOOjWMQrs8CrX6cGGGJPoSHWBq4PXhStOWc1YnAZMZ5+EFR1WTDn8CTOTiyLnXPpAR5X8rsRkPZrm1yZeYDDt4kRzDPLbUf4Sh/mD3kd1D8V2drCFLmjeQhgpw7GKGwHRga+ZdjSqXGIC3LD1RracZ230hOmUJTj+ABDW4IHrw4PflmVGgp8E9KnAf/gselRrzEY90l3Cr9N00QijFYYrbrl4qF4kdim1YX6jYT4ezQhbJsU84ENZsxzq+o0JVHYQ8rxck600VhGV04/ao=
+  options : []
+ languages :
+  - en-GB
+ popup_menus : []
+ message_bar :
+  internal_properties : CAAAAAgAAAAjFWXItEk/EPvcbGR+hALkgRfdOpVtIn+yZNxHnmSRFJegE/AnD2HbGAaMfhGCqfzkryHG9FVhjtF+iQYkZ59QBQ88Okhh0vjCoVhOagox2hvIqrJnU30QK15/ZA==
+ actionbar : {}
+ code_elements :
+  type_code : 1
+  p_codes :
+   -
+     internal_properties : CAAAAAgAAADpy/w3b7yZxlHa93jMx5a/Mete/EbXt4sZEAtGmMXpeUtm2PjV8nWxUomfpsyyW3whXEgExnpBlZW8P3ANI98DKiIjVnZrA1X/sZkHCx0hsVAaY3ofznVk78fsJ2ycLN8+Gh70k41IrKI01Y4=
+     code : |1+
+      procedure MyWindow()
+      
+      if PowerShellAvailable() = False then
+      	Error("PowerShell is not installed on this computer. You cannot use this example.")
+      	EndProgram()
+      end
+      
+      
+      
+      
+      if In64bitMode() then
+      	// 64-bit mode is being used. We can only run 64-bit
+      	SEL_3264		= 2
+      	SEL_3264.State	= Grayed
+      else
+      	// 32-bit mode is being used. We can run both versions
+      	// caution, in 32-bit
+      	
+      	if SysWindowsVersion(sysProcessor) = "32" then
+      		// 32-bit Windows
+      		SEL_3264		= 1
+      		SEL_3264.State	= Grayed
+      	else
+      		// we are in 64-bit Windows, in a 32-bit project configuration.
+      		// we can run both (PowerShell 32 or PowerShell 64)
+      		// Switch to 64-bit by default. There are more modules available in 64-bit than in 32-bit
+      		SEL_3264 = 2
+      	end
+      	
+      end
+      
+      EDT_SCRIPT = [
+      
+      # Lists the shares defined on the current computer
+      Get-WmiObject Win32_Share | Format-List
+      
+      ]
+   -
+     code : |1+
+      
+      
+     type : 34
+   -
+     code : |1+
+      
+      
+     type : 234
+   -
+     code : |1+
+      
+      
+     type : 165
+   -
+     code : |1+
+      
+      
+     type : 177
+   -
+     type : 180
+     enabled : false
+   -
+     type : 230
+     enabled : false
+   -
+     code : |1-
+      
+     type : 40
+   -
+     code : |1+
+      
+      
+     type : 2
+ code_parameters :
+  internal_properties : CAAAAAgAAAAspXRQsX4kpYpRJzI8SMGEUfXYJhQeqig0H9mPZLI9hoPnkeFEnSQ8t7JVd8VUY9eLyST/2DyAYB+9rK7lbHVOclfSdkhgAQ9dNjlmStKMpPl9
+  original_name : Modele1
+resources :
+ string_res :
+  identifier : 0x1cebc0190026bddc
+  internal_properties : CAAAAAgAAACyXVFaObH4lOGSEHJoZf1MD49w+XTw2LScZCP/urkWFwy+HYJdyQ3umA==
+custom_note :
+ internal_properties : CAAAAAgAAAC68/W0/adbG0nFCRhrE42B5HRnbDzVHaz86sSQyxlBk7I=
+associated_test :
+ name : TEST_Run_a_PowerShell_script.wxt
+rad :
+ internal_properties : CAAAAAgAAABoAN7PLpwJW3EiA7WVZdCA5EwrCA1rvutcDHooMWKe

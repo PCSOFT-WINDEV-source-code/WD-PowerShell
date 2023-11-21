@@ -1,0 +1,87 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : WD PowerShell
+ major_version : 28
+ minor_version : 0
+ type : 4097
+ description : ""
+ subtype : 0
+project :
+ identifier : 0x0
+ internal_properties : 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
+ configurations :
+  -
+    name : Windows 32-bit executable
+    internal_properties : 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
+    configuration_id : 7901421664965908999
+    type : 1
+    generation_name : WD PowerShell.exe
+    version :
+     major_version : 26
+     minor_version : 75
+     internal_generation_version : 2
+     autoincrement_version : false
+    icon_filename : .\description.ico
+    language : 2
+ elements :
+  identifier : 0x4cebbf6b00021770
+  elements :
+   -
+     name : WIN_Run_a_PowerShell_script
+     identifier : 0x4cebc02c002108c0
+     internal_properties : CAAAAAgAAABUMrz4x7z09+jbwAyPC1/V8vG54d6xXfSidqPdjJAEJCTOFmK+AkpeNReBfwf5gXdBwQ==
+     physical_name : .\WIN_Run_a_PowerShell_script.wdw
+     type : 2
+   -
+     name : COL_PowerShell
+     identifier : 0x4cebbfed00161242
+     internal_properties : CAAAAAgAAAAhE5+LVHHw4A5YuMEtSsUIkWY0b00ib9mfl+nAZl1qVVX1BywLAjbBQQMPqItvyDMk
+     physical_name : .\COL_PowerShell.wdg
+     type : 7
+   -
+     name : TEST_Run_a_PowerShell_script
+     identifier : 0x4fc655d3002add6e
+     internal_properties : CAAAAAgAAADRo4+bZGLzq7B8VGcwykWxMxOm67Nrfk0tuUgUonNIhlb1ByyYa/2EAtXgmLtf2MNU
+     physical_name : .\TEST_Run_a_PowerShell_script.wxt
+     type : 17
+  other_elements : []
+  net_assemblies : []
+  uwp_api : []
+  external_components : []
+  internal_components : []
+ report_and_queries_enabled : false
+ data_directory : <RepExeOuRepDonneesCommun>
+ common_generation_directory : true
+ languages :
+  - en-GB
+ wd_style_sheet : .\WX PowerShell.sty
+ wb_style_sheet : .\WX PowerShell.wws
+ code_elements :
+  internal_properties : CAAAAAgAAACnGuGMMumCz5e2lhze4j2vy1Ttj/ouzOYPiZIwbopZwHl+CEX81IIxLvomx5O1SEeZm286lP1bCrtMiDvnGQoxH8hGVCZS/953+RqJInr/G3L2
+  type_code : 0
+  p_codes :
+   -
+     type : 196621
+   -
+     type : 196627
+     enabled : false
+  orphans :
+   -
+     name : Windows 32-bit executable
+     identifier : 0x4cebbf6b00031780
+     code_elements :
+      type_code : 159
+      p_codes : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+rad :
+ internal_properties : CAAAAAgAAABhIL0UXeZmxDJxY3Xy0Q==
+project_explorer :
+ explorer_type : project
+resources :
+ string_res :
+  identifier : 0x0
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CAAAAAgAAAAd98VSJfHHqE3P0QHwrwdhn7ig8dWBR6valpUTgnAMTVXiDg==
